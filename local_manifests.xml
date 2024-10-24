@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+<!-- Generated using sounddrill31/actions_generate_local_manifests -->
+
+    <!-- Remotes -->
+    <remote name="ReStranger" fetch="https://github.com/ReStranger" clone-depth="1" />
+    <remote name="kibria5" fetch="https://gitlab.com/kibria5" clone-depth="1" />
+    <remote name="sm6225-sapphire-oss" fetch="https://github.com/sm6225-sapphire-oss" clone-depth="1" />
+
+    <!-- Removals -->
+    <remove-project name="LineageOS/android_hardware_qcom-caf_common" />
+
+    <!-- Repos -->
+    <!-- Device -->
+    <project path="device/xiaomi/sapphire" name="device_xiaomi_sapphire" remote="sm6225-sapphire-oss" revision="14.0" />
+    <project path="device/qcom/sepolicy_vndr/sm6225" name="device_qcom_sepolicy_vndr" remote="sm6225-sapphire-oss" revision="14" />
+    <project path="device/xiaomi/miuicamera-sapphire" name="device_xiaomi_miuicamera-sapphire" remote="sm6225-sapphire-oss" />
+    <project path="device/xiaomi/sapphire-kernel" name="device_xiaomi_sapphire-kernel" remote="sm6225-sapphire-oss" revision="14" />
+    <project path="device/xiaomi/sepolicy" name="device_xiaomi_sepolicy" remote="sm6225-sapphire-oss" />
+
+    <!-- Device - Common -->
+
+    <!-- Kernel -->
+
+    <!-- Vendor -->
+    <project path="vendor/xiaomi/miuicamera-sapphire" name="vendor_xiaomi_miuicamera-sapphire" remote="kibria5" />
+    <project path="vendor/xiaomi/sapphire" name="vendor_xiaomi_sapphire" remote="sm6225-sapphire-oss" revision="14" />
+
+    <!-- Vendor - Common -->
+
+    <!-- Hardware -->
+    <project path="hardware/qcom-caf/sm6225/display" name="hardware_qcom_display" remote="sm6225-sapphire-oss" revision="14" />
+    <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" remote="sm6225-sapphire-oss" revision="14" />
+    <project path="hardware/qcom-caf/sm6225/audio/pal" name="vendor_qcom_opensource_arpal-lx" remote="sm6225-sapphire-oss" revision="14" />
+    <project path="hardware/qcom-caf/sm6225/media" name="hardware_qcom_media" remote="sm6225-sapphire-oss" revision="14" />
+    <project path="hardware/qcom-caf/sm6225/audio/agm" name="vendor_qcom_opensource_agm" remote="sm6225-sapphire-oss" revision="14" />
+    <project path="hardware/qcom-caf/sm6225/data-ipa-cfg-mgr" name="vendor_qcom_opensource_data-ipa-cfg-mgr" remote="sm6225-sapphire-oss" revision="14" />
+    <project path="hardware/qcom-caf/sm6225/audio/primary-hal" name="hardware_qcom_audio-ar" remote="sm6225-sapphire-oss" revision="14" />
+    <project path="hardware/qcom-caf/sm6225/dataipa" name="vendor_qcom_opensource_dataipa" remote="sm6225-sapphire-oss" revision="14" />
+
+    <!-- Other Repos -->
+    <project path="" name="android_vendor_addons" remote="ReStranger" />
+    <project path="" name="hardware_xiaomi" remote="sm6225-sapphire-oss" />
+
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm6225/audio/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm6225/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm6225/Android.mk" />
+
+
+</manifest>
